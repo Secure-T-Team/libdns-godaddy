@@ -1,5 +1,5 @@
-module github.com/caoyongzheng/libdns-godaddy
+module github.com/Secure-T-Team/libdns-godaddy
 
-go 1.15
+go 1.16
 
-require github.com/libdns/libdns v0.1.0
+require github.com/libdns/libdns v0.2.0
