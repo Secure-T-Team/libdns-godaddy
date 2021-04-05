@@ -24,9 +24,8 @@ func getDomain(zone string) string {
 }
 
 func getRecordName(zone, name string) string {
-    fmt.Println("function getRecordName")
-	fmt.Printf("name %v, zone %v", name, zone)
-	return strings.TrimSuffix(strings.TrimSuffix(name, zone), ".")
+	trimmedZone := strings.TrimSuffix(zone, ".")
+	return strings.TrimSuffix(strings.TrimSuffix(name, trimmedZone), ".")
 }
 
 func (p *Provider) getApiHost() string {
